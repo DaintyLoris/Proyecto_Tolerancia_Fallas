@@ -34,7 +34,7 @@ kubectl apply -f 1-isito-init.yaml
 
 Y se obtiene una pantalla como al siguiente:
 
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img2.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img2.jpg)
 
 A partir de este momento se estará trabajando en el namespace de istio-system.
 Si se desea visualizar los pods por ejemplo, es necesario especificar el namespace en el comando:
@@ -45,21 +45,21 @@ kubectl get po -n istio-system
 
 En caso de que el comando se utilice inmediatamente después de la inicialización es probable que no todos los pods esten corriendo, por lo que se debería de esperar unos momentos y volver a usar el comando anterior hasta que todos los pods esten corriendo como a continuación
 
-![Proceso descrito](https://raw.githubusercontent.com/DaintyLoris/Proyecto_Tolerancia_Fallas/master/assets/img3.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img3.jpg)
 
 El segundo archivo que se aplica contiene las definiciones de los recursos y componentes que proporciona Istio y que necesita para trabajar:
 ~~~
 kubectl apply -f 2-istio-minikube-reduced.yaml 
 ~~~
 Se puede apreciar la creación de múltiples recursos a continuación:
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img4.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img4.jpg)
 
 Una vez más se aconseja el uso del comando:
 ~~~
 kubectl get po -n istio-system
 ~~~
 Para poder apreciar cuando todos los pods esten corriendo. Esto tomará por lo menos entre 5 y 10 minutos. 
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img5.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img5.jpg)
 
 Hasta este punto Istio ya se encuentra instalado en el sistema.
 
@@ -81,7 +81,7 @@ kubectl describe ns default
 ~~~
 Aquí es posible apreciar que no existe ninguna etiquet disponible:
 
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img6.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img6.jpg)
 
 Para crear una etiqueta en el namespace default se utiliza el comando: 
 ~~~
@@ -95,7 +95,7 @@ namespace/default labeled
 ~~~
 Ahora pudiendo apreciar la etiqueta:
 
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img7.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img7.jpg)
 
 Ya con las etiquetas hechas se procede a aplicar el 4to archivo .yaml:
 ~~~
@@ -104,7 +104,7 @@ kubectl apply -f 4-application-full-stack.yaml
 
 A lo que se nos presenta una imagen como la siguiente:
 
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img8.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img8.jpg)
 
 Los pods creados puede observarse con el comando:
 ~~~
@@ -113,4 +113,4 @@ $kubectl get po
 
 Los pods creados toman unos minutos en inicializar, Cabe resaltar que los pods tienen dos contenedores dentro ya que Istio realiza la inyección del proxy.
 
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img9.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img9.jpg)

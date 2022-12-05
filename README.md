@@ -45,7 +45,7 @@ kubectl get po -n istio-system
 
 En caso de que el comando se utilice inmediatamente después de la inicialización es probable que no todos los pods esten corriendo, por lo que se debería de esperar unos momentos y volver a usar el comando anterior hasta que todos los pods esten corriendo como a continuación
 
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img3.png)
+![Proceso descrito](https://raw.githubusercontent.com/DaintyLoris/Proyecto_Tolerancia_Fallas/master/assets/img3.png)
 
 El segundo archivo que se aplica contiene las definiciones de los recursos y componentes que proporciona Istio y que necesita para trabajar:
 ~~~

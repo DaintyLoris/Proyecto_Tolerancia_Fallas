@@ -14,7 +14,7 @@ minikube start -memory 4096
 
 La instalación tomará algo de tiempo, pero una vez finalizada nos aparecerá un mensaje como el siguiente:
 
-![Proceso descrito](https://raw.githubusercontent.com/JuanR0/ProyectoComputacionToleranteAFallas/master/assets/img1.png)
+![Proceso descrito](https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img1.jpg)
 
 Lo siguiente que debe hacerse es invocar a los archivos .yaml mediante el comando: 
 

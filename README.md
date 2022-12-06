@@ -23,7 +23,7 @@ Perez Juarez, Juan Ramon (218744325)
 </h2>
 
 
-### Instalación
+<h2 align="center"> Instalación </h2> 
 
 Para empezar se comienza con eliminar cualquier información necesaria que pudiera intervenir con la instalación, para lo que se usa el comando:
 ~~~
@@ -142,7 +142,8 @@ Los pods creados toman unos minutos en inicializar, Cabe resaltar que los pods t
 
 Y con eso la instalación debería estar terminada.
 
-### Programa
+<h2 align="center"> Ejecución </h2> 
+
 Ya habiendo explicado y realizado la instalación, lo primero que se debería hacer es
 utilizar el comando
 ~~~

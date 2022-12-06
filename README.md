@@ -203,7 +203,7 @@ información, eventualmente esto podría cambiar.
 Cabe destacar que kiali brinda información sobre qué significa cada leyenda en el
 gráfico.
 
-<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/Programa9.png" width="400">
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/Programa9.png" width="200">
 
 Esta es la forma en la que la colecta de datos de Istio es de utilidad, pues ayuda a
 averiguar en donde se originan los errores, entre quienes, momento, y así poder

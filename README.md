@@ -24,6 +24,28 @@ Perez Juarez, Juan Ramon (218744325)
 
 </h2>
 
+<h2 align="center"> Introdución </h2> 
+
+¿Qué es la intolerancia a fallos (Fault Tolerance)?
+
+Fault Tolerance es la característica incorporada en el sistema que permite su buen funcionamiento incluso después de que ocurre una falla en algunos de sus componentes. Un diseño tolerante a fallas puede causar una reducción en el nivel de productividad o un mayor tiempo de respuesta. Sin embargo, se asegura de que todo el sistema no falle. Por lo tanto, en resumen, funciona como un mecanismo de afrontamiento en un sistema que tiene como objetivo la autoestabilización.
+
+¿Qué es Docker?
+
+La tecnología Docker utiliza el kernel de Linux y sus funciones, como los grupos de control y los espacios de nombre, para dividir los procesos y ejecutarlos de manera independiente. El propósito de los contenedores es ejecutar varios procesos y aplicaciones por separado para que se pueda aprovechar mejor la infraestructura y, al mismo tiempo, conservar la seguridad que se obtendría con los sistemas individuales.
+
+¿Qué es Kubernetes?
+
+Kubernetes es una plataforma portable y extensible de código abierto para administrar cargas de trabajo y servicios. Kubernetes facilita la automatización y la configuración declarativa. Tiene un ecosistema grande y en rápido crecimiento. El soporte, las herramientas y los servicios para Kubernetes están ampliamente disponibles.
+
+¿Qué es una malla de servicios?
+
+Una malla de servicios o service mesh, se utiliza para controlar el intercambio de datos entre las distintas partes de una aplicación. A diferencia de otros sistemas que también administran esta comunicación, la malla de servicios es una capa visible y específica de la infraestructura integrada a la aplicación, la cual puede registrar si las distintas partes interactúan bien o no, a fin de facilitar la optimización de las comunicaciones y evitar el tiempo de inactividad a medida que crece una aplicación.
+
+¿Qué es Istio?
+Istio es una plataforma de malla de servicios con tecnología de open source que permite controlar el intercambio de datos entre los microservicios. Incluye API que le permiten integrarse a cualquier plataforma de registro, telemetría o sistema de políticas.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/service-mesh-1680.png" width="500">
 
 <h2 align="center"> Instalación </h2> 
 

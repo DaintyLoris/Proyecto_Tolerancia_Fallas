@@ -198,7 +198,7 @@ constantemente mientras la aplicación siga en ejecución.
 Es por ello que si bien en un principio no se detectan anomalías a falta de flujo de
 información, eventualmente esto podría cambiar.
 
-<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/Programa8.png" width="500">
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/Programa8.png" width="400">
 
 Cabe destacar que kiali brinda información sobre qué significa cada leyenda en el
 gráfico.

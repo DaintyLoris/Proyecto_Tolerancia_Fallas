@@ -216,6 +216,41 @@ evaluar y deducir que esta mal con la aplicación.
 
 <h2 align="center"> Failure injection </h2> 
 
+Como se pudo apreciar anteriormente Kiali facilita la tarea de rastrear errores.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/fi1.jpg" width="500">
+
+En este caso nos encontramos con lo que en apariencia es un cuello de botella en el flujo de datos, pues el sistema a medida que el tiempo avanza se ralentiza. Kiali además ofrece más información sobre los códigos de error que refuerzan la deducción anterior. 
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/fi2.jpg" width="300">
+
+En este punto podemos recurrir a otra herramienta de Istio llamada Jaeger. Esta herramienta permite apreciar que sucede a los requests a medida que viajan por el sistema. 
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/fi3.jpg" width="500">
+
+Si se elige el servicio que se tiene identificado como el causante del problema se obtiene una gráfica, la cual indica los tiempos de respuesta de los requests. Gracias a esto podemos apreciar que varios de los requests están tardando bastante en dar respuesta. 
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/fi4.jpg" width="500">
+
+Este error nos provoca una cascada de otros errores dado que los requests nuevos son demorados por los viejos. Esto es un problema serio pues puede estar comprometiendo todo el sistema. 
+
+Sabemos que en un sistema tolerante a fallas debería de ser posible tumbar un servicio y que el resto del sistema funcione, aun si no lo hace al 100%. No obstante en este caso nos estamos topando con un pod que realiza una llamada al exterior, por lo que ese elemento externo no puede tumbarse.
+
+Para prevenir este problema podría dársele un timeout como se sugiere en la documentación de Istio, de modo que cualquiera request que no dé respuesta oportuna en un tiempo fijo será desechada. 
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/fi5.jpg" width="400">
+
+Si volvemos a Kiali podemos ver como los Post ahora están cayendo en un 100% al llegar a ese segmento. Esto se debe a que al realizar la llamada al exterior y recibir respuesta el request se desecha, de modo que aun si no completa su recorrido al salir, sí que cumple dentro del sistema. 
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/fi6.jpg" width="500">
+
+Esto también se puede observar en los códigos de error que Kiali está percibiendo. 
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/fi7.jpg" width="300">
+
+Y si ahora se recurre una vez más a jaeger podemos observar el drástico descenso en los tiempos de respuesta de los request dentro del sistema.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/fi8.jpg" width="500">
 
 <h2 align="center"> Conclusión </h2> 
 

@@ -198,12 +198,12 @@ constantemente mientras la aplicación siga en ejecución.
 Es por ello que si bien en un principio no se detectan anomalías a falta de flujo de
 información, eventualmente esto podría cambiar.
 
-<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/Programa8.png" width="400">
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/Programa8.png" width="500">
 
 Cabe destacar que kiali brinda información sobre qué significa cada leyenda en el
 gráfico.
 
-<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/Programa9.png">
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/Programa9.png" width="400">
 
 Esta es la forma en la que la colecta de datos de Istio es de utilidad, pues ayuda a
 averiguar en donde se originan los errores, entre quienes, momento, y así poder

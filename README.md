@@ -1,4 +1,23 @@
-# Proyecto Computacion Tolerante A Fallas
+<h1 align="center"> Proyecto Computacion Tolerante A Fallas </h1>
+
+<p align="center">
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/cuceiLogo.png" width="400">
+
+</p>
+
+<h2 align="center">
+
+Carrera: Ingeniería en computación (INCO)
+
+Asignatura: COMPUTACION TOLERANTE A FALLAS (I7036_D06_2022B)
+
+Profesor: Lopez Franco, Michel Emanuel
+
+Alumno: Perez Juarez, Juan Ramon (218744325)
+
+</h2>
+
 
 ### Instalación
 

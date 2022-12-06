@@ -19,6 +19,8 @@ Alumnos:
 Anguiano Ortiz, Josue (215686936)
 
 Perez Juarez, Juan Ramon (218744325)
+ 
+(El último equipo al que le alcanzo a revisar el Lunes)
 
 </h2>
 
@@ -142,6 +144,7 @@ Los pods creados toman unos minutos en inicializar, Cabe resaltar que los pods t
 
 Y con eso la instalación debería estar terminada.
 
+
 <h2 align="center"> Ejecución </h2> 
 
 Ya habiendo explicado y realizado la instalación, lo primero que se debería hacer es
@@ -209,3 +212,19 @@ gráfico.
 Esta es la forma en la que la colecta de datos de Istio es de utilidad, pues ayuda a
 averiguar en donde se originan los errores, entre quienes, momento, y así poder
 evaluar y deducir que esta mal con la aplicación.
+
+
+<h2 align="center"> Failure injection </h2> 
+
+
+<h2 align="center"> Conclusión </h2> 
+
+<div align="justify">
+  
+Programar no es una tarea sencilla, aún especializando en un área y rodeando de que que se especializa en otra, a menudo los problemas no se hacen esperar. Y es que a diferencia de un doctor que tiene un paciente que le pueda decir que le duele, o un arquitecto identificar riesgos en su maqueta, un programador no puede preguntarle al software que desarrolla que no le gusta o tener una referencia física de que está “mal conectado”. Sumando esto al hecho de que si o si un problema eventualmente surgirá a lo largo de la vida de un sistema informático, aprender a identificar y corregir fallos es imperativo, más a falta de experiencia de un programador en tratar con ciertos errores y no conocer a alguien que ya los haya tratado, corregir fallos puede ser muy frustrante.
+  
+No obstante hoy en día existen herramientas que nos permiten identificar errores más fácilmente, siendo tal el caso de las mallas de servicios, pues estas nos representan de manera gráfica como los microservicios de las aplicaciones se comunican, que va a donde y cual es el resultado de la interacción. Gracias a esto es posible identificar errores más fácilmente, aún si se presentara el peor caso donde ninguna persona que desarrolló o cuanto menos conozca el software esté disponible temporal o permanentemente, y la persona a cargo del sistema no tiene claro el funcionamiento del mismo. 
+  
+Aun si no nos encontramos en un caso tan desafortunado como el descrito previamente, es un hecho que todo programador agradece cualquier herramienta que le facilite la identificación de problemas en sistemas informáticos complejos, tenga o no experiencia puesto que a menudo un fallo puede deberse a múltiples causas que deben descartarse, mientras que el fallo como tal a su vez puede tener multiple soluciones que a su vez deben probarse para llegar a la más óptima. 
+  
+</div> 

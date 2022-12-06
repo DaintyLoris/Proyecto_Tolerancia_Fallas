@@ -14,7 +14,11 @@ Asignatura: COMPUTACION TOLERANTE A FALLAS (I7036_D06_2022B)
 
 Profesor: Lopez Franco, Michel Emanuel
 
-Alumno: Perez Juarez, Juan Ramon (218744325)
+Alumnos: 
+
+Anguiano Ortiz, Josue (215686936)
+
+Perez Juarez, Juan Ramon (218744325)
 
 </h2>
 

@@ -141,3 +141,70 @@ Los pods creados toman unos minutos en inicializar, Cabe resaltar que los pods t
 <img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/img9.jpg" width="500">
 
 Y con eso la instalación debería estar terminada.
+
+### Programa
+Ya habiendo explicado y realizado la instalación, lo primero que se debería hacer es
+utilizar el comando
+~~~
+minikube ip
+~~~
+Esto dado que se necesita la dirección ip (que cambia cada vez que se reinicia
+minikube) más el puerto escogido.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa1.png" width="500">
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa2.png" width="500">
+
+La aplicación es a grandes rasgos un sistema que nos permite “rastrear” mediante
+gps diferentes vehículos.
+Por otra parte en caso de que nos interese apreciar la información que Istio a
+recolectado, se usará el componente kiali que se muestra al desplegar los pod con
+el comando:
+~~~
+kubectl get po -n info-system
+~~~
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa3.png" width="500">
+
+Además aplicando el comando:
+~~~
+kubectl get svc -n istio-system
+~~~
+Conseguimos un despliegue de los servicios entre los cuales se encuentra el de
+Kiali, donde se pude apreciar en qué puerto está trabajando y acceder junto con la
+ip que se extrajo al inicio.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa4.png" width="500">
+
+Esto nos llevará a la página de login de Kiali.
+El trabajo de Kiali es indicar que microservicios forman parte de la maya de servicios
+de Istio, tanto como se conecta como la manera en que se desempeñan.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa5.png" width="500">
+
+La pestaña que se nos despliega ya nos señala el comportamiento de los
+microservicios.
+Existen dos gráficos, uno por cada namespace, el de la derecha representando el
+plano de control y el de la izquierda el de datos.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa6.png" width="500">
+
+El trabajo de Istio es monitorear y recolectar información que pasa por su malla de
+servicios, por ende la gráfica no será constante, y se mantendrá cambiando
+constantemente mientras la aplicación siga en ejecución.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa7.png" width="500">
+
+Es por ello que si bien en un principio no se detectan anomalías a falta de flujo de
+información, eventualmente esto podría cambiar.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa8.png" width="500">
+
+Cabe destacar que kiali brinda información sobre qué significa cada leyenda en el
+gráfico.
+
+<img src="https://github.com/DaintyLoris/Proyecto_Tolerancia_Fallas/blob/main/assets/programa9.png">
+
+Esta es la forma en la que la colecta de datos de Istio es de utilidad, pues ayuda a
+averiguar en donde se originan los errores, entre quienes, momento, y así poder
+evaluar y deducir que esta mal con la aplicación.
